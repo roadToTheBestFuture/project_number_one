@@ -16,7 +16,7 @@ header{
 .container{
   margin-top: 75px;
   margin-bottom: 75px;
-  min-width: 1370px;
+  width: 1370px;
   height: 100%;
 }
 
@@ -49,6 +49,10 @@ nav{
 
 li{
   list-style: none;
+}
+ 
+li:hover{
+  text-decoration: underline;
 }
 
 
@@ -113,6 +117,11 @@ h1{
   color: white;
   opacity: 0.3;
   cursor: pointer;
+}
+
+.text button:hover{
+  background-color: red;
+  opacity: 1;
 }
 
 .Visiting{
@@ -280,14 +289,86 @@ h3{
   flex-direction: column;
 }
 
+.ticket_type span{
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
 .input{
   display: flex;
+  align-items: center;
   margin: 50px 0 50px 0;
 }
 
 input{
   border-radius: 4px;
   cursor: pointer;
+}
+
+label{
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
+.amount{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.amount h3{
+  margin-bottom: 11px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.amount span{
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
+.basic_button{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.basic_button button{
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.basic_button button:hover{
+  background-color: purple;
+}
+
+.amount_cost{
+  margin-bottom: 100px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.amount_cos_button{
+  width: 175px;
+  height: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.amount_cos_button:hover{
+  background-color: violet;
 }
 
 label{
