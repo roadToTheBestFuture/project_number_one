@@ -1,0 +1,443 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  max-width: 100%;
+  min-height: 200;
+  background-color: black;
+}
+
+.container{
+  margin-top: 75px;
+  margin-bottom: 75px;
+  width: 1370px;
+  height: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.louvre{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 195px;
+}
+
+.louvre span{
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  width: 720px;
+}
+
+li{
+  list-style: none;
+}
+
+
+.logo li a{
+  font-size: 22px;
+  font-weight: 200;
+  color: white;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 750px;
+  background-color: black;
+}
+
+.welcome_box{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome_box img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  z-index: 1;
+}
+
+.text{
+  height: 100%;
+  z-index: 2;
+}
+
+h1{
+  margin-bottom: 26px;
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.text p{
+  margin-bottom: 75px;
+  font-size: 28px;
+  font-weight: 300;
+  color: white;
+}
+
+.text button{
+  width: 360px;
+  height: 75px;
+  font-size: 22px;
+  font-weight: 200;
+  background-color: #960505;
+  color: white;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.Visiting{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 75px;
+  width: 100%;
+  height: 100%;
+}
+
+.tour_box{
+  width: 100%;
+  height: 100%;
+}
+
+.tour_box h2{
+  margin-bottom: 25px;
+  font-size: 80px;
+  font-weight: 400;
+  color: #9D8665;
+}
+
+.group_img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1440px;
+  border-top:  1px #710707 solid;
+}
+
+.box_text_img{
+  padding-top: 75px;
+}
+
+h3{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+}
+
+.box_text_img p{
+  width: 300px;
+  border-top:  1px #710707 solid;
+  font-size: 22px;
+  font-weight: 200;
+  color: gray;
+}
+
+.box_text_img img{
+  max-width: 100%;
+}
+
+.Explore{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 865px;
+  background-color: black;
+}
+
+.picture_box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.picture_text h2{
+  margin-bottom: 125px;
+  padding-bottom: 25px;
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.picture_text h2:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #710707;
+}
+
+.picture_text p{
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+}
+
+.picture_box img{
+  max-width: 50%;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 800px;
+}
+
+.video_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video_box img{
+  max-width: 100%;
+}
+
+.video_box_text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.video_box_text h2{
+  font-size: 80px;
+  font-weight: 400;
+  color: #9D8665;
+}
+
+.video_box_text p{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.tickets{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.tickets h2{
+  margin-bottom: 103px;
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.tickets_block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets_block img{
+  max-width: 50%;
+}
+
+.ticket_type{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  display: flex;
+  margin: 50px 0 50px 0;
+}
+
+input{
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label{
+  margin-left: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
+.ticket_type span{
+  margin-bottom: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.ticket_type input{
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+}
+
+.contacs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+}
+
+.contacs h2{
+  font-size: 80px;
+  font-weight: 400;
+  color: #9D8665;
+  text-transform: uppercase;
+}
+
+.map{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.map_text{
+  display: flex;
+  flex-direction: column;
+}
+
+.map text h2{
+  position: absolute;
+  margin-bottom: 113px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.map text h2::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  color: orange;
+}
+
+address {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+phone{
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+mail{
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.map img{
+  max-width: 50%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background-color: black;
+}
+
+.nav_footer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.img_louvre{
+  width: 20%;
+}
+
+.img_louvre span{
+  margin-left: 20px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav_footer ul{
+  width: 30%;
+}
+
+.nav_footer li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.nav_footer a{
+  font-size: 22px;
+  font-style: 200px;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.social_networks {
+  width: 15%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.social_networks button{
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+i{
+  color: white;
+}
