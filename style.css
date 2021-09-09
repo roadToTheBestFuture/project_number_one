@@ -505,6 +505,7 @@ footer{
 
 .social_networks {
   display: flex;
+  justify-content: space-betweeng;
   width: 15%;
   position: absolute;
   right: 0;
@@ -520,5 +521,10 @@ footer{
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+.social_networks button:hover{
+  border: 3px solid white;
+  background-color: red;
 }
 
