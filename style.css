@@ -505,7 +505,7 @@ footer{
 
 .social_networks {
   display: flex;
-  justify-content: space-betweeng;
+  justify-content: space-between;
   width: 15%;
   position: absolute;
   right: 0;
