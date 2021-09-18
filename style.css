@@ -7,10 +7,13 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 75px;
   max-width: 100%;
   min-height: 200;
   background-color: black;
+}
+
+button{
+  border-radius: none;
 }
 
 .container{
@@ -238,8 +241,123 @@ h3{
   justify-content: center;
 }
 
-.video_box img{
-  max-width: 100%;
+
+.video_box_rectangle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 715px;
+}
+
+.video_box_rectangle .img{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 700px;
+  background-image: url(img/Rectangle-2.png);
+}
+
+.pusk{
+  position: absolute;
+  background-color: transparent;
+  width: 220px;
+  height: 220px;
+  border: none;
+  background-image: url(img/пуск.png);
+}
+
+.video_box_rectangle_block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85px;
+  background-color: black;
+}
+
+.video_main{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.video_main .first{
+  display: flex;
+  justify-content: space-between;
+  width: 153px;
+}
+
+.video_main .first .first_video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 30px;
+  background-image: url(img/Frame-3\ —\ копия.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.video_main .first .second_video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 30px;
+  background-image: url(img/Frame-3\ —\ копия.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.video_main .first .third_video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 30px;
+  background-image: url(img/Frame-4\ —\ копия.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.video_box_rectangle_block .second{
+  width: 820px;
+}
+
+.video_box_rectangle_block .third{
+  display: flex;
+  justify-content: space-between;
+  width: 276px;
+}
+
+.video_box_rectangle_block .third button{
+  width: 38px;
+  height: 30px;
+  background-image: url(img/Frame\ —\ копия.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.video_box_rectangle_block .third input{
+  width: 155px;
+}
+
+.video_box_rectangle_block .third .fourth{
+  width: 38px;
+  height: 30px;
+  background-image: url(img/Frame\ —\ копия\ 2.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .video_box_text{
@@ -469,6 +587,7 @@ footer{
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -506,23 +625,27 @@ footer{
 .social_networks {
   display: flex;
   justify-content: space-between;
-  width: 15%;
+  width: 25%;
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.togeter{
+  display: flex;
+  width: 70%;
+  
 }
 
 .social_networks button{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
   background-color: transparent;
   border: 1px white solid;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 48px;
+  height: 48px;
   cursor: pointer;
 }
 
