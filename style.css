@@ -258,17 +258,32 @@ h3{
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 700px;
+  height: 629px;
   background-image: url(img/Rectangle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pusk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   background-color: transparent;
   width: 220px;
   height: 220px;
-  border: none;
-  background-image: url(img/пуск.png);
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.pusk::after{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 130px;
+  background-image: url(img/Vector-10.png); 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .video_box_rectangle_block{
@@ -323,6 +338,7 @@ h3{
   width: 27px;
   height: 30px;
   background-image: url(img/Frame-4\ —\ копия.png);
+
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -352,10 +368,12 @@ h3{
 }
 
 .video_box_rectangle_block .third .fourth{
-  width: 38px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   background-image: url(img/Frame\ —\ копия\ 2.png);
-  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border: none;
   cursor: pointer;
 }
