@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 0 ;
 }
 
 header{
@@ -17,11 +17,44 @@ button{
 }
 
 .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 75px;
   margin-bottom: 75px;
   width: 1370px;
-  height: 100%;
 }
+
+@media( max-width:1370px){
+  .container{
+    max-width:970px;
+  }
+}
+
+@media( max-width:992px){
+  .container{
+    max-width:750px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 40px;
+  }
+}
+
+@media( max-width:767){
+  .container{
+    max-width:none  ;
+  }
+  .group_img{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
 
 nav{
   display: flex;
@@ -33,7 +66,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 195px;
+  width: 15%;
 }
 
 .louvre span{
@@ -47,7 +80,7 @@ nav{
 .logo{
   display: flex;
   justify-content: space-between;
-  width: 720px;
+  width: 60%;
 }
 
 li{
@@ -88,7 +121,6 @@ li:hover{
   bottom: 0;
   right: 0;
   width: 60%;
-  z-index: 1;
 }
 
 .text{
@@ -239,6 +271,7 @@ h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 
@@ -247,7 +280,6 @@ h3{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
   width: 100%;
   min-height: 715px;
 }
@@ -258,7 +290,7 @@ h3{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 629px;
+  height: 80%;
   background-image: url(img/Rectangle-2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,8 +311,8 @@ h3{
 .pusk::after{
   content: "";
   display: block;
-  width: 130px;
-  height: 130px;
+  width: 91px;
+  height: 120px;
   background-image: url(img/Vector-10.png); 
   background-repeat: no-repeat;
   background-position: center;
@@ -338,20 +370,21 @@ h3{
   width: 27px;
   height: 30px;
   background-image: url(img/Frame-4\ —\ копия.png);
-
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .video_box_rectangle_block .second{
-  width: 820px;
+  width: 100%;
+  margin: 0 20px;
 }
 
 .video_box_rectangle_block .third{
   display: flex;
   justify-content: space-between;
-  width: 276px;
+  width: 30%;
+  margin: 0 10px;
 }
 
 .video_box_rectangle_block .third button{
@@ -381,6 +414,7 @@ h3{
 .video_box_text{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 40px;
   width: 100%;
@@ -414,10 +448,13 @@ h3{
 .tickets_block{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
 }
 
 .tickets_block img{
-  max-width: 50%;
+ max-width: 50%;
 }
 
 .ticket_type{
@@ -434,7 +471,7 @@ h3{
 .input{
   display: flex;
   align-items: center;
-  margin: 50px 0 50px 0;
+  margin-bottom: 49px;
 }
 
 input{
@@ -536,7 +573,8 @@ label{
   min-height: 700px;
 }
 
-.contacs h2{
+.contact_heading {
+  margin-bottom: 25px;
   font-size: 80px;
   font-weight: 400;
   color: #9D8665;
@@ -546,7 +584,10 @@ label{
 .map{
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
   width: 100%;
+  border-top: 1px solid #710707;
+  padding-top: 75px;
 }
 
 .map_text{
@@ -555,18 +596,11 @@ label{
 }
 
 .map text h2{
-  position: absolute;
   margin-bottom: 113px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
 }
 
-.map text h2::after{
-  content: "";
-  width: 100%;
-  height: 1px;
-  color: orange;
-}
 
 address {
   margin-top: 36px;
@@ -622,16 +656,13 @@ footer{
   color: white;
 }
 
-.nav_footer ul{
-  width: 30%;
-}
-
 .nav_footer li{
   list-style: none;
   margin-bottom: 10px;
 }
 
 .nav_footer a{
+  width: 100%;
   font-size: 22px;
   font-style: 200px;
   font-style: normal;
@@ -643,16 +674,14 @@ footer{
 .social_networks {
   display: flex;
   justify-content: space-between;
-  width: 25%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  align-items: flex-end;
+ 
 }
 
 .togeter{
   display: flex;
-  width: 70%;
-  
+  justify-content: space-around;
+  width: 60%;
 }
 
 .social_networks button{
